@@ -9,7 +9,7 @@ argument-hint: "pull request number or URL"
 Produce a written code-review report for a pull request. The Git server is required. Issue-tracker
 context is optional.
 
-## Configuration Gate
+## Dependencies
 
 Read `.github/copilot/project.json` before delegation or external tool use.
 

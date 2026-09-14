@@ -13,7 +13,7 @@ Own an iterative review of the current conversation, an attachment, or a specifi
 Preserve intent. Resolve human decisions. Treat every resolvable finding before starting another
 reviewer session, using the smallest coherent change for each finding.
 
-## Configurable Capabilities
+## Dependencies
 
 Read `.github/copilot/project.json` before the first reviewer delegation.
 

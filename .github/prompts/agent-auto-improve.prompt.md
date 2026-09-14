@@ -17,6 +17,6 @@ For each customization file, consider:
 
 Prefer updating existing files over creating new ones.
 
-Apply all warranted updates, then summarize what was changed (or confirm nothing needed updating).
+Ask the user for approval of each all warranted updates, then apply approved ones, and summarize what was changed (or confirm nothing needed updating).
 
 Finally, delete only `/memories/repo/` files (not session memory) — any knowledge worth keeping long-term should live in agent customization files, not in memory.

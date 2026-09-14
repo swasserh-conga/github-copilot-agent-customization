@@ -12,7 +12,7 @@ change is small enough that all its tasks legitimately form one commit.
 
 Do not continue past an unanswered decision point. Ask the user and resume the workflow after the answer.
 
-## Required Dependency
+## Dependencies
 
 Before acting, resolve and load the exact `openspec-apply-change` skill. This prompt is intentionally
 OpenSpec-specific; the dependency is not configurable. If the skill is unavailable, stop and state

@@ -9,7 +9,7 @@ argument-hint: "[title] [description]"
 Create a well-structured issue from the current conversation and workspace context. Never perform a
 write until the user confirms the complete issue draft.
 
-## Configuration Gate
+## Dependencies
 
 Read `.github/copilot/project.json` and inspect `capabilities.issueTracker`.
 

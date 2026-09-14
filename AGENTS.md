@@ -9,6 +9,11 @@ skill first. It describes the conventions to follow (YAML frontmatter,
 If its content isn't already present in context, load it with the file-reading
 tool before taking any other action.
 
+## Customization Structure
+
+In consumer customizations, group intrinsic and configurable prerequisites
+under a `Dependencies` section.
+
 ## Language
 
 All content in this repository (instructions, prompts, agents, skills,
