@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "sh .github/hooks/check-copilot-project.sh",
+        "windows": "powershell -NoProfile -ExecutionPolicy Bypass -File .github/hooks/check-copilot-project.ps1",
+        "linux": "sh .github/hooks/check-copilot-project.sh",
+        "osx": "sh .github/hooks/check-copilot-project.sh",
+        "timeout": 5
+      }
+    ]
+  }
+}

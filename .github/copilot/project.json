@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "capabilities": {
+    "issueTracker": {
+      "status": "unconfigured",
+      "instructions": ".github/copilot/issue-tracker.md"
+    },
+    "gitServer": {
+      "status": "unconfigured",
+      "instructions": ".github/copilot/git-server.md"
+    },
+    "grilling": {
+      "status": "enabled",
+      "customization": "grill-me-on"
+    },
+    "conciseStyle": {
+      "status": "disabled",
+      "customization": null
+    }
+  }
+}
