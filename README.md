@@ -10,9 +10,9 @@ information.
 - `.github/instructions/` - coding rules by language or context
 - `.github/prompts/` - reusable prompts
 - `.github/agents/` - specialized agents
-- `.github/skills/` - reusable workflows, including project setup
+- `.github/skills/` - reusable workflows, including project setup and PR review
 - `.github/hooks/` - non-blocking session configuration checks
-- `.github/copilot/` - committed per-repository configuration
+- `.github/copilot/` - committed per-repository configuration and ignored agent artifacts
 
 ## Configuration
 

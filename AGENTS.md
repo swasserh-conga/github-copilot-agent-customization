@@ -12,7 +12,10 @@ tool before taking any other action.
 ## Customization Structure
 
 In consumer customizations, group intrinsic and configurable prerequisites
-under a `Dependencies` section.
+under a `Dependencies` section near the top, before behavioral procedures and
+output contracts.
+
+Store disposable workspace artifacts under `.github/copilot/.artifacts/`.
 
 ## Language
 

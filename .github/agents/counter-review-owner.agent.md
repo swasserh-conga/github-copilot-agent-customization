@@ -34,7 +34,7 @@ Pick a short kebab-case `<topic>` identifying the subject (source file stem, att
 conversation subject). Create one Markdown working document named `counter-review-<topic>.md`:
 
 - For a workspace source file, create it beside the source.
-- For conversation or attachment input, create it under `build/tmp/`.
+- For conversation or attachment input, create it under `.github/copilot/.artifacts/counter-review/`.
 - Never modify the original source unless the user explicitly requests it.
 - Reuse an existing matching `counter-review-<topic>.md` when resuming.
 

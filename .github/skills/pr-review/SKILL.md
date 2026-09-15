@@ -28,6 +28,12 @@ capability block, treat it as unconfigured and run `setup-copilot-project` in th
 - `unconfigured`: run `setup-copilot-project` before delegation when issue context is relevant.
 - `disabled`: continue without issue context and record that it was not configured.
 
+### Review Style: Optional
+
+If the `caveman-review` skill is available, load it and apply its presentation guidance to the review
+report. Its absence is not an error and must not trigger `setup-copilot-project`. This skill's report
+template, severity model, required content, and output path take precedence over style guidance.
+
 Never infer provider-specific tools, URLs, repository identifiers, or issue-key formats when they are
 not established by configuration or pull-request metadata.
 
@@ -66,8 +72,7 @@ safety failures and `should` for material non-blocking risks.
 ### 6. Write the Report
 
 Fill [assets/review-template.md](./assets/review-template.md) and write it to
-`build/tmp/reviews/PR-<pull-request-id>-review.md`. Do not post it to the Git server unless the user
-explicitly asks.
+`.github/copilot/.artifacts/reviews/PR-<pull-request-id>-review.md`.
 
 ### 7. Optional Independent Review
 

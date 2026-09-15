@@ -14,6 +14,16 @@ model: ['GPT-5.6 Sol (copilot)']
 Review supplied subject independently. Every invocation starts fresh. No prior-session assumptions.
 Usable by users, feature agents, counter-review owners, or any other caller.
 
+## Dependencies
+
+Read `.github/copilot/project.json`. Treat an absent or malformed manifest, unsupported schema
+version, or missing `conciseStyle` block as unconfigured and return control to the main agent to run
+`setup-copilot-project` before delegation. If `conciseStyle` is enabled and its uniquely named
+customization is available, apply it to every finding. If it is absent or unconfigured, return control
+to the main agent to run `setup-copilot-project` before delegation. If disabled or explicitly invalid,
+continue silently with the local rules under `Concise Output`; it does not block review or alter the
+output contract.
+
 Always perform a complete review of the entire requested scope. Never focus only on named concerns,
 prior findings, changed-since-last-pass sections, or caller-suggested risk areas. Those are context,
 not a scope reduction. Review every file, section, requirement, and relevant interaction inside the
@@ -69,13 +79,6 @@ Rules:
 - Never include owner notes, prior replies, resolved items, history, or done list.
 
 ## Concise Output
-
-Read `.github/copilot/project.json`. Treat an absent or malformed manifest, unsupported schema
-version, or missing `conciseStyle` block as unconfigured and return control to the main agent to run
-`setup-copilot-project` before delegation. If `conciseStyle` is enabled and its uniquely named
-customization is available, apply it to every finding. If it is absent or unconfigured, return control
-to the main agent to run `setup-copilot-project` before delegation. If disabled or explicitly invalid,
-continue silently with the local rules below; it does not block review or alter the output contract.
 
 - One finding = one short bullet. Target 20 words; exceed only when correctness requires detail.
 - Fragments allowed. Drop articles, filler, hedging, background narration, repeated context.
